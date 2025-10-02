@@ -1,0 +1,42 @@
+# # Paths
+# data_path: "./dataset"
+# action_names: ['left_signal', 'right_signal', 'no_signal']
+# save_model_path: "./model_checkpoint"
+
+# # Training Params
+# epochs: 1000
+# patience: 50
+# batch_size: 32
+# num_workers: 4
+# lr_patience: 10
+# log_interval: 10
+# learning_rate: 1e-4
+# select_frame: {'begin': 1, 'end': 15, 'skip': 1}
+
+# # Inference Params
+# cnn_encoder: "./crnn/model_checkpoint/cnn_encoder_best.pth"
+# rnn_decoder: "./crnn/model_checkpoint/rnn_decoder_best.pth"
+
+# =========================================================
+# Paths
+data_path: "./dataset"
+action_names: ['left_signal', 'right_signal', 'no_signal']
+save_model_path: "./models"
+
+# Training Params
+epochs: 200
+patience: 10
+batch_size: 32
+num_workers: 4
+lr_patience: 10
+log_interval: 10
+learning_rate: 1e-4
+select_frame: {'begin': 1, 'end': 15, 'skip': 1}
+
+# Inference Params
+cnn_encoder: "./crnn/models/cnn_encoder_best.pth"
+rnn_decoder: "./crnn/models/rnn_decoder_best.pth"
+# =========================================================
+
+# cnn_encoder: "./crnn/lstm_regnetY8/cnn_encoder_best.pth"
+# rnn_decoder: "./crnn/lstm_regnetY8/rnn_decoder_best.pth"
